@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-rows: 90px 1fr 1fr 1fr 80px ;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
+
+.header{
+
+    background-color:#353a40;
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+    height: 90px;
+
+}
+
+.header.header__responsive{
+
+    height:550px;
+
+}
+
+main{
+    background-color: #fffffffe;
+    grid-row: 2 / 5;
+    grid-column: 1 / 6;
+
+}
+
+footer{
+
+    background-color: #1f506e;
+    grid-row: 5 / 6;
+    grid-column: 1 / 6;
+    min-height: 80px;
+    max-height: 80px;
+
+}
+
+@media screen and (max-width: 935px) {
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header{
+
+        flex-basis: 90px;
+
+    }   
+
+    main{
+
+        flex-basis: 0;
+        flex-grow: 2;
+        flex-shrink: 0;
+    }
+
+    footer{
+        flex-grow: 1;
+        min-height: 340px;
+        max-height: 340px;
+      
+    }
+
+}   

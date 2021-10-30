@@ -1,0 +1,225 @@
+.nav{
+
+    display: flex;
+    flex-direction: row;
+    height: 80px;    
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.nav__logo{
+
+    display: flex;
+    height: 80px;
+    padding: 7px 0;
+    flex-basis: 250px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+.nav__logo--title{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 0 ;
+    margin-top: 7px;
+}
+
+a:hover{
+
+    color: #fff;
+
+}
+
+.nav__logo--img{
+
+    width: 130px;
+    height: 130px;
+
+}
+
+.nav__links{
+
+    display: flex;
+    padding: 15px 0;
+    flex-shrink: 0;
+    margin-right: 140px;
+}
+
+.nav__links__ul__responsive{
+
+    display: none;
+}
+
+.nav__links__ul{
+
+    display: flex;
+    margin:10px 0 ;
+}
+
+.nav__links__ul li{
+
+    list-style:none;
+    margin: 4px 0;  
+
+}
+
+.nav__links__ul li a{
+
+    text-decoration: none;
+    font-size: 1.2em;
+    margin:0 5px;
+    padding: 20px 7px;
+
+}
+
+.nav__links__a__grey{
+
+   color: #949393;
+
+}
+
+.nav__links__a__white{
+
+    color: #fff;
+
+}
+
+.nav__links__a__green{
+
+    color: #2b9b44;
+
+}
+
+.nav__links__ul__responsive-button{
+
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__links__ul__responsive-button button{
+
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+@media screen and (max-width: 1366px){
+
+    .nav__links{
+
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1152px){
+
+    .nav__links{
+        margin: auto;
+    }
+
+    .nav__links__ul{
+
+        display: flex;
+        margin:13px 0;
+        padding:0;
+    }
+
+    .nav__links__ul li a{
+
+        font-size: 1em;
+        margin:auto;
+        padding: 20px 10px;
+    
+    }
+
+    .nav__links__ul li{
+
+        list-style:none;
+        margin: 4px 0;
+    
+    }
+    
+    .nav__logo{
+
+        height: 80px;
+        flex-grow:0;
+        flex-shrink:1;
+    }
+
+}
+
+@media screen and (max-width: 935px) {
+
+    .nav{
+
+        display: flex;
+        flex-direction: column;
+        height: 600px;    
+        justify-content: flex-start;
+        margin: 0;
+ 
+    }
+
+    .nav__logo{
+
+        flex-basis: 0;
+
+    }
+
+    .nav__logo--title{
+
+        display: none;
+    }
+
+    .nav__links{
+
+        margin: 0 auto;
+    }
+
+    .nav__links__ul{
+
+        display: none;
+    }
+
+    .nav__links__ul__responsive{
+
+        display: flex;
+        justify-content: center;
+        padding:0;
+
+    }
+    .nav__links__ul__responsive__li__container{
+
+        margin: auto;
+        list-style: none;
+        text-align: center;
+
+    }
+
+    .nav__links__ul__responsive__li__container li{
+
+        padding: 30px 0;
+
+    }
+
+    .nav__links__ul__responsive__li__container li a{
+
+        font-size: 1.2em;
+        text-decoration: none;
+
+    }
+
+    .nav__links__ul__responsive-button{
+        display: block;
+    }
+
+
+}
